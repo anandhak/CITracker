@@ -1,0 +1,51 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[pair02]]></title>
+    <id>http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/stages.xml</id>
+    <author>
+        <name>Go</name>
+    </author>
+    <updated>2010-09-16T15:55:04+05:30</updated>
+    <link rel="self" href="http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/stages.xml"/>
+
+
+        <link rel="next" href="http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/stages.xml?before=36551"/>
+
+
+
+        <entry>
+            <title><![CDATA[pair02/175/build/1]]></title>
+            <updated>2010-09-16T15:55:04+05:30</updated>
+            <id>http://go03.thoughtworks.com:8153/go/pipelines/pair02/175/build/1</id>
+            <link href="http://go03.thoughtworks.com:8153/go/api/stages/14733.xml" rel="alternate"/>
+            <link href="http://go03.thoughtworks.com:8153/go/pipelines/pair02/175/build/1" rel="alternate" type="text/html"/>
+            <link href="http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/6148.xml" rel="http://studios.thoughtworks.com/ns/relations/go/pipeline" type="text/xml"/>
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="stage" label="Stage" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="completed" label="Completed" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="passed" label="Passed" />
+        </entry>
+
+        <entry>
+            <title><![CDATA[pair02/174/build/1]]></title>
+            <updated>2010-09-16T15:30:23+05:30</updated>
+            <id>http://go03.thoughtworks.com:8153/go/pipelines/pair02/174/build/1</id>
+            <link href="http://go03.thoughtworks.com:8153/go/api/stages/14730.xml" rel="alternate"/>
+            <link href="http://go03.thoughtworks.com:8153/go/pipelines/pair02/174/build/1" rel="alternate" type="text/html"/>
+            <link href="http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/6146.xml" rel="http://studios.thoughtworks.com/ns/relations/go/pipeline" type="text/xml"/>
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="stage" label="Stage" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="completed" label="Completed" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="failed" label="Failed" />
+        </entry>
+
+        <entry>
+            <title><![CDATA[pair02/173/build/1]]></title>
+            <updated>2010-09-16T10:49:29+05:30</updated>
+            <id>http://go03.thoughtworks.com:8153/go/pipelines/pair02/173/build/1</id>
+            <link href="http://go03.thoughtworks.com:8153/go/api/stages/14729.xml" rel="alternate"/>
+            <link href="http://go03.thoughtworks.com:8153/go/pipelines/pair02/173/build/1" rel="alternate" type="text/html"/>
+            <link href="http://go03.thoughtworks.com:8153/go/api/pipelines/pair02/6145.xml" rel="http://studios.thoughtworks.com/ns/relations/go/pipeline" type="text/xml"/>
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="stage" label="Stage" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="completed" label="Completed" />
+            <category scheme="http://studios.thoughtworks.com/ns/categories/go" term="passed" label="Passed" />
+        </entry>
+
+</feed>

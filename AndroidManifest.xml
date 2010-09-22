@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.thoughtworks.studios.driod.citracker">
+    <application android:icon="@drawable/icon" android:label="CITracker">
+    </application>
+</manifest>
