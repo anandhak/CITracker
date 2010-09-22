@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff6d42ef-d84b-489e-874f-043cd4d4d1d5" name="First Commit" comment="&#9;">
+    <list default="true" id="ff6d42ef-d84b-489e-874f-043cd4d4d1d5" name="First Commit" comment="First Commit">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/gen/com/example/R.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/Message.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/GoFeeds.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/res/values/strings.xml" />
@@ -28,9 +29,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/AndroidSaxFeedParser.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/ParserType.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CITracker.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/XmlPullFeedParser.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GoFeeds/gen/com/example/MyActivity.java" />
@@ -99,7 +100,138 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DomFeedParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/DomFeedParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1285177870000" expanded="false" signature="57:305" placeholder="..." />
+                <marker date="1285177870000" expanded="true" signature="401:423" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="455:1860" placeholder="{...}" />
+                <marker date="1285177870000" expanded="false" signature="570:579" placeholder="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1285177870000" expanded="false" signature="58:201" placeholder="..." />
+                <marker date="1285177870000" expanded="true" signature="467:487" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="525:558" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="626:645" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="682:802" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="833:856" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="900:939" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="973:1022" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1065:1288" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1313:1468" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1508:1833" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1869:2232" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="2281:2997" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="3038:3168" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/MessageList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1285177870000" expanded="false" signature="58:496" placeholder="..." />
+                <marker date="1285177870000" expanded="true" signature="637:774" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="838:1302" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1305:1346" placeholder="@{...}" />
+                <marker date="1285177870000" expanded="true" signature="1412:1695" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="1783:1989" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="2030:2862" placeholder="{...}" />
+                <marker date="1285177870000" expanded="false" signature="2417:2425" placeholder="&lt;~&gt;" />
+                <marker date="1285177870000" expanded="false" signature="2487:2495" placeholder="&lt;~&gt;" />
+                <marker date="1285177870000" expanded="false" signature="2696:2704" placeholder="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/default.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feed.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/feed.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1284727121000" expanded="true" signature="41:3417" placeholder="..." />
+                <marker date="1284727121000" expanded="true" signature="174:212" placeholder="..." />
+                <marker date="1284727121000" expanded="true" signature="497:1456" placeholder="..." />
+                <marker date="1284727121000" expanded="true" signature="1473:2432" placeholder="..." />
+                <marker date="1284727121000" expanded="true" signature="2449:3408" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoFeeds.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoFeeds.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="84" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedParserFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="22" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1285177870000" expanded="true" signature="239:287" placeholder="{...}" />
+                <marker date="1285177870000" expanded="true" signature="342:624" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -121,6 +253,7 @@
         <option value="$PROJECT_DIR$/AndroidXml/src/org/thoughtworks/android/AndroidSaxFeedParser.java" />
         <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/AndroidSaxFeedParser.java" />
         <option value="$PROJECT_DIR$/GoFeeds/sample.xml" />
+        <option value="$PROJECT_DIR$/GoFeeds/GoFeeds.xml" />
       </list>
     </option>
   </component>
@@ -464,14 +597,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -517,14 +650,135 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GoFeeds/bin/org/developerworks/android/AndroidSaxFeedParser$2.class">
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/AndroidSaxFeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/Base64Coder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="13" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="53" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1285177870000" expanded="false" signature="57:196" placeholder="..." />
+            <marker date="1285177870000" expanded="true" signature="687:811" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="853:1293" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/DomFeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1285177870000" expanded="false" signature="57:305" placeholder="..." />
+            <marker date="1285177870000" expanded="true" signature="401:423" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="455:1860" placeholder="{...}" />
+            <marker date="1285177870000" expanded="false" signature="570:579" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1285177870000" expanded="true" signature="239:287" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="342:624" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1285177870000" expanded="false" signature="58:201" placeholder="..." />
+            <marker date="1285177870000" expanded="true" signature="467:487" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="525:558" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="626:645" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="682:802" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="833:856" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="900:939" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="973:1022" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1065:1288" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1313:1468" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1508:1833" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1869:2232" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="2281:2997" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="3038:3168" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/MessageList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1285177870000" expanded="false" signature="58:496" placeholder="..." />
+            <marker date="1285177870000" expanded="true" signature="637:774" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="838:1302" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1305:1346" placeholder="@{...}" />
+            <marker date="1285177870000" expanded="true" signature="1412:1695" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="1783:1989" placeholder="{...}" />
+            <marker date="1285177870000" expanded="true" signature="2030:2862" placeholder="{...}" />
+            <marker date="1285177870000" expanded="false" signature="2417:2425" placeholder="&lt;~&gt;" />
+            <marker date="1285177870000" expanded="false" signature="2487:2495" placeholder="&lt;~&gt;" />
+            <marker date="1285177870000" expanded="false" signature="2696:2704" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/default.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/bin/org/developerworks/android/AndroidSaxFeedParser$3.class">
+    <entry file="file://$PROJECT_DIR$/GoFeeds/feed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1284727121000" expanded="true" signature="41:3417" placeholder="..." />
+            <marker date="1284727121000" expanded="true" signature="174:212" placeholder="..." />
+            <marker date="1284727121000" expanded="true" signature="497:1456" placeholder="..." />
+            <marker date="1284727121000" expanded="true" signature="1473:2432" placeholder="..." />
+            <marker date="1284727121000" expanded="true" signature="2449:3408" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="84" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
