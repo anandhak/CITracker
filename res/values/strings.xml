@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Go Feeds</string>
-    <string name="pipelines">Pipelines</string>
-    <string name="pipelines_runs">Pipeline Runs</string>
     <string name="android_sax">Android SAX</string>
     <string name="sax">Classic SAX</string>
     <string name="dom">DOM</string>

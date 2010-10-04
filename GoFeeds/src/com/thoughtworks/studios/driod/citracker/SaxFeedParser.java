@@ -1,11 +1,11 @@
 package com.thoughtworks.studios.driod.citracker;
 
 import android.util.Log;
-
-import java.util.List;
+import com.thoughtworks.studios.driod.citracker.model.Message;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import java.util.List;
 
 public class SaxFeedParser extends BaseFeedParser {
 
@@ -15,7 +15,7 @@ public class SaxFeedParser extends BaseFeedParser {
 	
 	public List<Message> parse() {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
-        RssHandler handler = new RssHandler();
+        RssHandler handler = new RssHandler(10);
         try {
             SAXParser parser = factory.newSAXParser();
 			parser.parse(this.getInputStream(), handler);

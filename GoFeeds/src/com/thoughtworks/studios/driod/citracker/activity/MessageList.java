@@ -1,10 +1,4 @@
-package com.thoughtworks.studios.driod.citracker;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.thoughtworks.studios.driod.citracker.view.SpecialAdapter;
-import org.thoughtworks.android.R;
+package com.thoughtworks.studios.driod.citracker.activity;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -16,9 +10,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import com.thoughtworks.studios.driod.citracker.FeedParser;
+import com.thoughtworks.studios.driod.citracker.FeedParserFactory;
+import com.thoughtworks.studios.driod.citracker.ParserType;
+import com.thoughtworks.studios.driod.citracker.model.Message;
+import com.thoughtworks.studios.driod.citracker.view.PipelineStatusListAdapter;
+import org.thoughtworks.android.R;
+
+import java.util.List;
 
 public class MessageList extends ListActivity {
-	
+
+    static String feedUrl = "http://go02.thoughtworks.com:8153/go/api/pipelines/cruise/stages.xml";
+    
 	private List<Message> messages;
 	
     @Override
@@ -67,22 +71,13 @@ public class MessageList extends ListActivity {
 	private void loadFeed(ParserType type){
     	try{
     		Log.i("Go Feeds", "ParserType="+type.name());
-	    	FeedParser parser = FeedParserFactory.getParser(type);
+	    	FeedParser parser = FeedParserFactory.getParser(type, feedUrl);
 	    	long start = System.currentTimeMillis();
 	    	messages = parser.parse();
 	    	long duration = System.currentTimeMillis() - start;
 	    	Log.i("Go Feeds", "Parser duration=" + duration);
-
-//            process();
-
-	    	List<String> titles = new ArrayList<String>(messages.size());
-	    	List<String> statuses = new ArrayList<String>(messages.size());
-	    	for (Message msg : messages){
-	    		titles.add(msg.getTitle());
-	    		statuses.add(msg.getCategory());
-	    	}
-	    	ArrayAdapter<String> adapter = 
-	    		new SpecialAdapter<String>(this, R.layout.row, titles, statuses);
+	    	ArrayAdapter<Message> adapter = 
+	    		new PipelineStatusListAdapter(this, R.layout.row, messages);
 	    	this.setListAdapter(adapter);
     	} catch (Throwable t){
     		Log.e("Go Feeds",t.getMessage(),t);

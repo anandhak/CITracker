@@ -3,6 +3,7 @@ package com.thoughtworks.studios.driod.citracker;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.thoughtworks.studios.driod.citracker.model.Message;
 import org.xmlpull.v1.XmlPullParser;
 
 import android.util.Log;

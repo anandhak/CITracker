@@ -3,6 +3,7 @@ package com.thoughtworks.studios.driod.citracker;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.thoughtworks.studios.driod.citracker.model.Message;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -13,6 +14,11 @@ public class RssHandler extends DefaultHandler {
     private List<Message> messages = new ArrayList<Message>();
     private Message currentMessage;
     private StringBuilder builder;
+    private int numberOfEntries;
+
+    public RssHandler(int numberOfEntries) {
+        this.numberOfEntries = numberOfEntries;
+    }
 
     public List<Message> getMessages() {
         return this.messages;
@@ -45,8 +51,8 @@ public class RssHandler extends DefaultHandler {
     }
 
     private void limitFeedEntries() {
-        if (messages.size() >= 10) {
-            throw new RuntimeException("Need only 10 entries!");
+        if (messages.size() >= numberOfEntries) {
+            throw new RuntimeException("Need only limited entries!");
         }
     }
 

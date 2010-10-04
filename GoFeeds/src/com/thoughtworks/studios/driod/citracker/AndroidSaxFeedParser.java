@@ -6,6 +6,7 @@ import android.sax.EndTextElementListener;
 import android.sax.RootElement;
 import android.util.Log;
 import android.util.Xml;
+import com.thoughtworks.studios.driod.citracker.model.Message;
 
 import java.io.IOException;
 import java.io.InputStream;

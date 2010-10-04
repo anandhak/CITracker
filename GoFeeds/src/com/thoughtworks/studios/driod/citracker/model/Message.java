@@ -1,4 +1,4 @@
-package com.thoughtworks.studios.driod.citracker;
+package com.thoughtworks.studios.driod.citracker.model;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -70,17 +70,9 @@ public class Message implements Comparable<Message>{
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Title: ");
 		sb.append(title);
 		sb.append('\n');
-		sb.append("Date: ");
 		sb.append(this.getUpdatedDate());
-		sb.append('\n');
-		sb.append("Link: ");
-		sb.append(link);
-		sb.append('\n');
-		sb.append("Description: ");
-		sb.append(category);
 		return sb.toString();
 	}
 

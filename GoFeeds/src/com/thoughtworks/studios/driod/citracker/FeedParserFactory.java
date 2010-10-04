@@ -1,13 +1,8 @@
 package com.thoughtworks.studios.driod.citracker;
 
 public abstract class FeedParserFactory {
-	static String feedUrl = "https://cruise01.thoughtworks.com/go/api/pipelines/cleanArtifacts/stages.xml";
 
-    public static FeedParser getParser(){
-		return getParser(ParserType.ANDROID_SAX);
-	}
-	
-	public static FeedParser getParser(ParserType type){
+    public static FeedParser getParser(ParserType type, String feedUrl){
 		switch (type){
 			case SAX:
 				return new SaxFeedParser(feedUrl);
