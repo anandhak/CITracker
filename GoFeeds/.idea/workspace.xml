@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="234c4d28-c09f-425f-9d07-e3580813a7c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CITracker.iml" afterPath="$PROJECT_DIR$/CITracker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/model/Pipeline.java" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/model/Pipeline.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/ParserType.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/GoFeeds.iml" afterPath="$PROJECT_DIR$/GoFeeds/GoFeeds.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/res/values/strings.xml" afterPath="$PROJECT_DIR$/GoFeeds/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java" afterPath="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoFeeds.iml" afterPath="$PROJECT_DIR$/GoFeeds.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndriodManifest.xml" afterPath="$PROJECT_DIR$/AndriodManifest.xml" />
     </list>
     <ignored path="CITracker.iws" />
     <ignored path="GoFeeds/bin/" />
@@ -72,46 +68,55 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="MessageList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="566" selection-end="566" vertical-scroll-proportion="0.8333333">
+            <state line="79" column="0" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PipelineList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="50" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BaseFeedParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="34" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndriodManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GoFeeds/AndriodManifest.xml">
+      <file leaf-file-name="MainMenuOptions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/MainMenuOptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+            <state line="5" column="17" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoFeeds.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.xml">
+      <file leaf-file-name="FeedParserFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GoFeeds/default.properties">
+      <file leaf-file-name="AndriodManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndriodManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+            <state line="19" column="12" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6199616">
               <folding />
             </state>
           </provider>
@@ -131,22 +136,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/RssHandler.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/SaxFeedParser.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/view/PipelineStatusAdapter.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/view/PipelineListAdapter.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java" />
         <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/model/Pipeline.java" />
         <option value="$PROJECT_DIR$/GoFeeds/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/ParserType.java" />
         <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/default.properties" />
-        <option value="$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java" />
-        <option value="$PROJECT_DIR$/GoFeeds/GoFeeds.xml" />
         <option value="$PROJECT_DIR$/GoFeeds/AndriodManifest.xml" />
+        <option value="$PROJECT_DIR$/GoFeeds.iml" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/ParserType.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/MainMenuOptions.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java" />
+        <option value="$PROJECT_DIR$/AndriodManifest.xml" />
       </list>
     </option>
   </component>
@@ -185,7 +190,110 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="citracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="citracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="citracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFeeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="citracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -254,57 +362,26 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CITracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CITracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CITracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoFeeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="GoToAction.allIncluded" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Android Logcat" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -318,7 +395,7 @@
       <recent name="$PROJECT_DIR$/res" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.Unnamed">
+  <component name="RunManager" selected="Android Application.GoFeeds">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -329,6 +406,23 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CHOOSE_DEVICE_MANUALLY" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
@@ -350,23 +444,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <method>
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CHOOSE_DEVICE_MANUALLY" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
       <method>
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
@@ -502,26 +579,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="false" name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="CITracker" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="do_nothing" />
-      <option name="CHOOSE_DEVICE_MANUALLY" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="true" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="BuildArtifacts" enabled="true" />
-      </method>
-    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.GoFeeds" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -542,7 +601,7 @@
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">$PROJECT_DIR$/../../../.subversion_IDEA</configuration>
+    <configuration useDefault="true">$PROJECT_DIR$/../../../../.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -555,23 +614,43 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <frame x="-3" y="25" width="1440" height="874" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31584582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23982869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23940678" sideWeight="0.30901858" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23907454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19915254" sideWeight="0.7304117" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6816976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26029217" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -609,40 +688,14 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/default.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2777778" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/view/PipelineListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="922" selection-end="1107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="0.089020774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/model/Pipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="768" selection-end="768" vertical-scroll-proportion="0.6231454" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="70" selection-start="1551" selection-end="1562" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
@@ -650,52 +703,54 @@
         <state line="4" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/gen/org/thoughtworks/android/R.java">
+    <entry file="file://$PROJECT_DIR$/default.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="744" selection-end="744" vertical-scroll-proportion="0.42284867" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/thoughtworks/studios/driod/citracker/R.java">
+    <entry file="file://$PROJECT_DIR$/GoFeeds.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" />
+        <state line="9" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.20642202" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java">
+    <entry file="file://$PROJECT_DIR$/feed.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/default.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/RssHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="60" selection-start="817" selection-end="817" vertical-scroll-proportion="0.020718232" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/MessageList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="79" column="0" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/AndriodManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/activity/PipelineList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="67" column="50" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoFeeds/GoFeeds.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/BaseFeedParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/MainMenuOptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="566" selection-end="566" vertical-scroll-proportion="0.8333333">
+        <state line="5" column="17" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/studios/driod/citracker/FeedParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndriodManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6199616">
           <folding />
         </state>
       </provider>

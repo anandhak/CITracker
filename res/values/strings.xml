@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Go Feeds</string>
-    <string name="android_sax">Android SAX</string>
-    <string name="sax">Classic SAX</string>
-    <string name="dom">DOM</string>
-    <string name="pull">XML Pull</string>
+    <string name="pipelines">Pipelines</string>
+    <string name="pipelines_runs">Pipeline Runs</string>
+    <string name="add_pipeline">Add Pipeline</string>
+    <string name="add_go_url">Add New Go URL</string>
+    <string name="preferences">Preferences</string>
+    
+    <string name="inline_preferences">http://s:8153/go/api/pipelines/%p/stages.xml</string>
+    <string name="dialog_based_preferences">Authentication</string>
+
+    <string name="launch_preferences">Launch preferences</string>
+
+    <string name="title_edittext_preference">Credentials</string>
+    <string name="summary_edittext_preference">Use the LDAP or Go server credentials here.</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+
+    <string name="title_list_preference">Pipelines</string>
+    <string name="summary_list_preference">Pipelines to  be notified on.</string>
+    <string name="dialog_title_list_preference">Choose one</string>
+
+    <string name="title_screen_preference">Screen preference</string>
+    <string name="summary_screen_preference">Shows another screen of preferences</string>
+
+    
 </resources>

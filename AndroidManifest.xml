@@ -6,10 +6,9 @@
     <application android:icon="@drawable/icon" android:label="GoFeeds">
         <activity android:name="com.thoughtworks.studios.driod.citracker.activity.MessageList"
                   android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name="com.thoughtworks.studios.driod.citracker.activity.PreferencesFromCode"
+                  android:label="@string/app_name">
         </activity>
         <activity android:name="com.thoughtworks.studios.driod.citracker.activity.PipelineList"
                   android:label="@string/app_name">

@@ -2,7 +2,7 @@
 GoFeeds/bin/*
 out/*
 gen/*
-
+bin/*
 
 # Compiled source #
 ###################
