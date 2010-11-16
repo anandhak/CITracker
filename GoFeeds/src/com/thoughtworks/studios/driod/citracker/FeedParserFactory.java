@@ -2,6 +2,9 @@ package com.thoughtworks.studios.driod.citracker;
 
 import java.util.List;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.thoughtworks.studios.driod.citracker.activity.PipelineList;
@@ -34,5 +37,15 @@ public abstract class FeedParserFactory {
 			Log.e("Go Feeds", t.getMessage(), t);
 		}
 		return pipelines;
+	}
+
+	public static String getAuthString(Context context) {
+		SharedPreferences preferences = PreferenceManager
+				.getDefaultSharedPreferences(context);
+		String authString = preferences.getString("username", "") + ":"
+				+ preferences.getString("password", "");
+		Log.i("Using prefs", String.format("on url %s using <<<%s>>>", PipelineList.feedUrl,
+				authString));
+		return authString;
 	}
 }

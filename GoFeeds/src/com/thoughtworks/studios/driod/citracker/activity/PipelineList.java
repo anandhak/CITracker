@@ -5,9 +5,7 @@ import java.util.List;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -39,7 +37,7 @@ public class PipelineList extends ListActivity {
 		setContentView(com.thoughtworks.studios.driod.citracker.R.layout.main);
 		pipelines = new ArrayList<Pipeline>();
 		this.setListAdapter(new PipelineListAdapter(this, R.layout.row,
-				FeedParserFactory.loadPipelines(pipelines, getAuthString())));
+				FeedParserFactory.loadPipelines(pipelines, FeedParserFactory.getAuthString(this))));
 	}
 
 	@Override
@@ -78,16 +76,6 @@ public class PipelineList extends ListActivity {
 		myIntent.putExtra(SELECTED_PIPELINE_URL_KEY, pipelines.get(position)
 				.getPipelineFeedUrl());
 		startActivity(myIntent);
-	}
-
-	private String getAuthString() {
-		SharedPreferences preferences = PreferenceManager
-				.getDefaultSharedPreferences(this);
-		String authString = preferences.getString("username", "") + ":"
-				+ preferences.getString("password", "");
-		Log.i("Using prefs", String.format("on url %s using <<<%s>>>", feedUrl,
-				authString));
-		return authString;
 	}
 
 }

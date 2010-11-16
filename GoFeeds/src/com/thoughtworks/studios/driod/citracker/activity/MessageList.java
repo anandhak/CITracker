@@ -34,7 +34,7 @@ public class MessageList extends ListActivity {
         String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
         Log.i("Pipeline runs-- showing", "Pipeline url="+currentPipeline);
         feedUrl = currentPipeline;
-        loadFeed();
+        loadFeed(feedUrl, FeedParserFactory.getAuthString(this));
     }
     
 	@Override
@@ -57,7 +57,7 @@ public class MessageList extends ListActivity {
 		if (adapter.getCount() > 0){
 			adapter.clear();
 		}
-		this.loadFeed();
+		this.loadFeed(feedUrl, FeedParserFactory.getAuthString(this));
 		return true;
 	}
 
@@ -69,9 +69,9 @@ public class MessageList extends ListActivity {
 		this.startActivity(viewMessage);
 	}
 
-	private void loadFeed(){
+	private void loadFeed(String feedUrl, String userAuth){
     	try{
-	    	FeedParser parser = FeedParserFactory.getParser(feedUrl, "");
+	    	FeedParser parser = FeedParserFactory.getParser(feedUrl, userAuth);
 	    	long start = System.currentTimeMillis();
 	    	messages = parser.parse();
 	    	long duration = System.currentTimeMillis() - start;
