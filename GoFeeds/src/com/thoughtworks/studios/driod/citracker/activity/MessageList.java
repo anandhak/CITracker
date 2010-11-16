@@ -71,7 +71,7 @@ public class MessageList extends ListActivity {
 
 	private void loadFeed(){
     	try{
-	    	FeedParser parser = FeedParserFactory.getParser(feedUrl);
+	    	FeedParser parser = FeedParserFactory.getParser(feedUrl, "");
 	    	long start = System.currentTimeMillis();
 	    	messages = parser.parse();
 	    	long duration = System.currentTimeMillis() - start;

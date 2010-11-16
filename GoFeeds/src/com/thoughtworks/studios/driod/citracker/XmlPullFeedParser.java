@@ -12,7 +12,7 @@ import android.util.Xml;
 public class XmlPullFeedParser extends BaseFeedParser {
 
 	public XmlPullFeedParser(String feedUrl) {
-		super(feedUrl);
+		super(feedUrl, "");
 	}
 
 	public List<Message> parse() {

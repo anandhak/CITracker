@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 public class DomFeedParser extends BaseFeedParser {
 
 	protected DomFeedParser(String feedUrl) {
-		super(feedUrl);
+		super(feedUrl, "");
 	}
 
 	public List<Message> parse() {

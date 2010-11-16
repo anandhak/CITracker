@@ -18,7 +18,7 @@ public class AndroidSaxFeedParser extends BaseFeedParser {
     static final String FEED = "feed";
 
     public AndroidSaxFeedParser(String feedUrl) {
-        super(feedUrl);
+        super(feedUrl, "");
     }
 
     public List<Message> parse() {

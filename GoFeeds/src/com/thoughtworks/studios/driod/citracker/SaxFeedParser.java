@@ -9,8 +9,8 @@ import java.util.List;
 
 public class SaxFeedParser extends BaseFeedParser {
 
-    protected   SaxFeedParser(String feedUrl){
-		super(feedUrl);
+    protected   SaxFeedParser(String feedUrl, String authString){
+		super(feedUrl, authString);
 	}
 	
 	public List<Message> parse() {

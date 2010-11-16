@@ -16,11 +16,8 @@ public class Pipeline implements Comparable<Pipeline>{
 	
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		sb.append(title);
-		return sb.toString();
+		return this.title;
 	}
-
 
 	public int compareTo(Pipeline another) {
 		if (another == null) return 1;

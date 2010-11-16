@@ -7,12 +7,12 @@
     <string name="add_go_url">Add New Go URL</string>
     <string name="preferences">Preferences</string>
     
-    <string name="inline_preferences">http://s:8153/go/api/pipelines/%p/stages.xml</string>
-    <string name="dialog_based_preferences">Authentication</string>
+    <string name="go_url_example">http://s:8153/go/api/pipelines/%p/stages.xml</string>
+    <string name="authentication">Authentication</string>
 
     <string name="launch_preferences">Launch preferences</string>
 
-    <string name="title_edittext_preference">Credentials</string>
+    <string name="credentials">Credentials</string>
     <string name="summary_edittext_preference">Use the LDAP or Go server credentials here.</string>
     <string name="username">Username</string>
     <string name="password">password</string>

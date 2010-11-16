@@ -3,6 +3,7 @@ GoFeeds/bin/*
 out/*
 gen/*
 bin/*
+*.apk
 
 # Compiled source #
 ###################

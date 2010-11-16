@@ -9,6 +9,8 @@ import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.TransformationMethod;
 
 public class PreferencesFromCode extends PreferenceActivity {
 
@@ -24,7 +26,7 @@ public class PreferencesFromCode extends PreferenceActivity {
 
         // Inline preferences 
         PreferenceCategory inlinePrefCat = new PreferenceCategory(this);
-        inlinePrefCat.setTitle(R.string.inline_preferences);
+        inlinePrefCat.setTitle(R.string.go_url_example);
         root.addPreference(inlinePrefCat);
 
         // Toggle preference
@@ -36,16 +38,24 @@ public class PreferencesFromCode extends PreferenceActivity {
 
         // Dialog based preferences
         PreferenceCategory dialogBasedPrefCat = new PreferenceCategory(this);
-        dialogBasedPrefCat.setTitle(R.string.dialog_based_preferences);
+        dialogBasedPrefCat.setTitle(R.string.authentication);
         root.addPreference(dialogBasedPrefCat);
 
         // Edit text preference
-        EditTextPreference editTextPref = new EditTextPreference(this);
-        editTextPref.setDialogTitle(R.string.username);
-        editTextPref.setKey("edittext_preference");
-        editTextPref.setTitle(R.string.title_edittext_preference);
-        editTextPref.setSummary(R.string.summary_edittext_preference);
-        dialogBasedPrefCat.addPreference(editTextPref);
+        EditTextPreference userName = new EditTextPreference(this);
+        userName.setDialogTitle(R.string.username);
+        userName.setKey("username");
+        userName.setTitle(R.string.credentials);
+        userName.setSummary(R.string.summary_edittext_preference);
+        dialogBasedPrefCat.addPreference(userName);
+        
+        // Edit text preference
+        EditTextPreference password = new EditTextPreference(this);
+        password.setDialogTitle(R.string.password);
+        password.setKey("password");
+        password.setTitle(R.string.credentials);
+        password.getEditText().setTransformationMethod(PasswordTransformationMethod.getInstance());
+        dialogBasedPrefCat.addPreference(password);
 
         // List preference
         ListPreference listPref = new ListPreference(this);
