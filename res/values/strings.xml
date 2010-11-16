@@ -7,7 +7,8 @@
     <string name="add_go_url">Add New Go URL</string>
     <string name="preferences">Preferences</string>
     
-    <string name="go_url_example">http://s:8153/go/api/pipelines/%p/stages.xml</string>
+    <string name="server_base_url">Go Server:Port</string>
+    <string name="go_url_example">serverName:port</string>
     <string name="authentication">Authentication</string>
 
     <string name="launch_preferences">Launch preferences</string>
@@ -19,10 +20,9 @@
 
     <string name="title_list_preference">Pipelines</string>
     <string name="summary_list_preference">Pipelines to  be notified on.</string>
-    <string name="dialog_title_list_preference">Choose one</string>
-
-    <string name="title_screen_preference">Screen preference</string>
-    <string name="summary_screen_preference">Shows another screen of preferences</string>
-
+    <string name="choose_pipeline">Choose pipeline</string>
+    
+    <string name="pipeline">Pipeline</string>
+    <string name="pipelines_example">Ex. pipeline1,pipeline2..</string>
     
 </resources>

@@ -9,13 +9,15 @@ import java.util.List;
 
 public class SaxFeedParser extends BaseFeedParser {
 
-    protected   SaxFeedParser(String feedUrl, String authString){
+    private static final int MAX_RSS_ENTRIES = 10;
+
+	protected   SaxFeedParser(String feedUrl, String authString){
 		super(feedUrl, authString);
 	}
 	
 	public List<Message> parse() {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
-        RssHandler handler = new RssHandler(10);
+        RssHandler handler = new RssHandler(MAX_RSS_ENTRIES);
         try {
             SAXParser parser = factory.newSAXParser();
 			parser.parse(this.getInputStream(), handler);

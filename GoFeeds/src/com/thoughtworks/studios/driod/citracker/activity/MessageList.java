@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.thoughtworks.studios.driod.citracker.FeedParser;
 import com.thoughtworks.studios.driod.citracker.FeedParserFactory;
 import com.thoughtworks.studios.driod.citracker.MainMenuOptions;
 import com.thoughtworks.studios.driod.citracker.R;
@@ -22,66 +21,61 @@ import com.thoughtworks.studios.driod.citracker.view.PipelineStatusListAdapter;
 
 public class MessageList extends ListActivity {
 
-    static String feedUrl = "http://go02.thoughtworks.com:8153/go/api/pipelines/cruise/stages.xml";
-    
 	private List<Message> messages;
-	
-    @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        setContentView(com.thoughtworks.studios.driod.citracker.R.layout.main);
 
-        String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
-        Log.i("Pipeline runs-- showing", "Pipeline url="+currentPipeline);
-        feedUrl = currentPipeline;
-        loadFeed(feedUrl, FeedParserFactory.getAuthString(this));
-    }
-    
+	@Override
+	public void onCreate(Bundle icicle) {
+		super.onCreate(icicle);
+		setContentView(com.thoughtworks.studios.driod.citracker.R.layout.main);
+
+		String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
+		Log.i("Pipeline runs-- showing", "Pipeline url=" + currentPipeline);
+		messages = FeedParserFactory.loadFeed(currentPipeline, FeedParserFactory.getAuthString(this));
+		ArrayAdapter<Message> adapter = new PipelineStatusListAdapter(this, R.layout.row, messages);
+		this.setListAdapter(adapter);
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-        menu.add(Menu.NONE, MainMenuOptions.ADD_PIPELINE.ordinal(),
-                MainMenuOptions.ADD_PIPELINE.ordinal(), R.string.app_name);
-        menu.add(Menu.NONE, MainMenuOptions.PREFERENCES.ordinal(),
-                MainMenuOptions.PREFERENCES.ordinal(), R.string.app_name);
-
+		menu.add(Menu.NONE, MainMenuOptions.ADD_PIPELINE.ordinal(), MainMenuOptions.ADD_PIPELINE.ordinal(),
+				com.thoughtworks.studios.driod.citracker.R.string.add_pipeline);
+		menu.add(Menu.NONE, MainMenuOptions.PREFERENCES.ordinal(), MainMenuOptions.PREFERENCES.ordinal(),
+				com.thoughtworks.studios.driod.citracker.R.string.preferences);
 		return true;
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		super.onMenuItemSelected(featureId, item);
-		ArrayAdapter<String> adapter =
-			(ArrayAdapter<String>) this.getListAdapter();
-		if (adapter.getCount() > 0){
+		MainMenuOptions option = MainMenuOptions.values()[item.getItemId()];
+		if (option == MainMenuOptions.PREFERENCES) {
+			Log.i("On menu selection" + option.toString(), item.toString());
+			Intent myIntent = new Intent();
+			myIntent.setClass(getApplicationContext(), PreferencesFromCode.class);
+			startActivity(myIntent);
+		}
+		reloadMessages();
+		return false;
+	}
+
+	private void reloadMessages() {
+		PipelineStatusListAdapter adapter = (PipelineStatusListAdapter) this.getListAdapter();
+		if (adapter.getCount() > 0) {
 			adapter.clear();
 		}
-		this.loadFeed(feedUrl, FeedParserFactory.getAuthString(this));
-		return true;
+		String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
+		messages = FeedParserFactory.loadFeed(currentPipeline, FeedParserFactory.getAuthString(this));
+		adapter = new PipelineStatusListAdapter(this, R.layout.row, messages);
+		this.setListAdapter(adapter);
 	}
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
-		Intent viewMessage = new Intent(Intent.ACTION_VIEW, 
-				Uri.parse(messages.get(position).getLink().toExternalForm()));
+		Log.i("On Browser",String.format("On stage selection navigate to %s on browser!", messages.get(position).getLink()));
+		Intent viewMessage = new Intent(Intent.ACTION_VIEW, Uri.parse(messages.get(position).getLink().toExternalForm()));
 		this.startActivity(viewMessage);
 	}
-
-	private void loadFeed(String feedUrl, String userAuth){
-    	try{
-	    	FeedParser parser = FeedParserFactory.getParser(feedUrl, userAuth);
-	    	long start = System.currentTimeMillis();
-	    	messages = parser.parse();
-	    	long duration = System.currentTimeMillis() - start;
-	    	Log.i("Go Feeds", "Parser duration=" + duration);
-	    	ArrayAdapter<Message> adapter = 
-	    		new PipelineStatusListAdapter(this, R.layout.row, messages);
-	    	this.setListAdapter(adapter);
-    	} catch (Throwable t){
-    		Log.e("Go Feeds",t.getMessage(),t);
-    	}
-    }
 
 }

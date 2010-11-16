@@ -1,8 +1,5 @@
 package com.thoughtworks.studios.driod.citracker.activity;
 
-import com.thoughtworks.studios.driod.citracker.R;
-
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
@@ -10,7 +7,10 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.text.method.PasswordTransformationMethod;
-import android.text.method.TransformationMethod;
+import android.text.method.SingleLineTransformationMethod;
+import android.widget.Toast;
+
+import com.thoughtworks.studios.driod.citracker.R;
 
 public class PreferencesFromCode extends PreferenceActivity {
 
@@ -20,15 +20,30 @@ public class PreferencesFromCode extends PreferenceActivity {
         setPreferenceScreen(createPreferenceHierarchy());
     }
 
-    private PreferenceScreen createPreferenceHierarchy() {
+    
+    @Override
+	protected void onStop() {
+		super.onStop();
+		Toast.makeText(getApplicationContext(), "Saving configuration...", Toast.LENGTH_SHORT).show();
+	}
+
+
+	private PreferenceScreen createPreferenceHierarchy() {
         // Root
         PreferenceScreen root = getPreferenceManager().createPreferenceScreen(this);
 
-        // Inline preferences 
         PreferenceCategory inlinePrefCat = new PreferenceCategory(this);
-        inlinePrefCat.setTitle(R.string.go_url_example);
+        inlinePrefCat.setTitle(R.string.server_base_url);
+        inlinePrefCat.setSummary(R.string.go_url_example);
         root.addPreference(inlinePrefCat);
 
+        EditTextPreference serverUrl = new EditTextPreference(this);
+        serverUrl.setDialogTitle(R.string.server_base_url);
+		serverUrl.setKey("serverUrl");
+        serverUrl.setTitle(R.string.server_base_url);
+        inlinePrefCat.addPreference(serverUrl);
+        
+//TODO Enable Auth on UI based on checkbox to be implemented below
         // Toggle preference
 //        CheckBoxPreference togglePref = new CheckBoxPreference(this);
 //        togglePref.setKey("toggle_preference");
@@ -36,36 +51,34 @@ public class PreferencesFromCode extends PreferenceActivity {
 //        togglePref.setSummary(R.string.summary_toggle_preference);
 //        inlinePrefCat.addPreference(togglePref);
 
-        // Dialog based preferences
         PreferenceCategory dialogBasedPrefCat = new PreferenceCategory(this);
-        dialogBasedPrefCat.setTitle(R.string.authentication);
+        dialogBasedPrefCat.setTitle(R.string.credentials);
+        dialogBasedPrefCat.setSummary(R.string.summary_edittext_preference);
         root.addPreference(dialogBasedPrefCat);
 
         // Edit text preference
         EditTextPreference userName = new EditTextPreference(this);
         userName.setDialogTitle(R.string.username);
         userName.setKey("username");
-        userName.setTitle(R.string.credentials);
-        userName.setSummary(R.string.summary_edittext_preference);
+        userName.setTitle(R.string.username);
+        userName.getEditText().setTransformationMethod(SingleLineTransformationMethod.getInstance());
         dialogBasedPrefCat.addPreference(userName);
         
         // Edit text preference
         EditTextPreference password = new EditTextPreference(this);
         password.setDialogTitle(R.string.password);
         password.setKey("password");
-        password.setTitle(R.string.credentials);
+        password.setTitle(R.string.password);
         password.getEditText().setTransformationMethod(PasswordTransformationMethod.getInstance());
         dialogBasedPrefCat.addPreference(password);
 
-        // List preference
-        ListPreference listPref = new ListPreference(this);
-        listPref.setEntries(R.array.entries_list_preference);
-        listPref.setEntryValues(R.array.entryvalues_list_preference);
-        listPref.setDialogTitle(R.string.dialog_title_list_preference);
-        listPref.setKey("list_preference");
-        listPref.setTitle(R.string.title_list_preference);
-        listPref.setSummary(R.string.summary_list_preference);
-        dialogBasedPrefCat.addPreference(listPref);
+        // Add pipeline
+        EditTextPreference pipelineName = new EditTextPreference(this);
+        pipelineName.setDialogTitle(R.string.pipelines);
+        pipelineName.setKey("pipeline_names");
+        pipelineName.setTitle(R.string.pipeline);
+        pipelineName.setSummary(R.string.pipelines_example);
+        dialogBasedPrefCat.addPreference(pipelineName);
 
         // Launch preferences
 //        PreferenceCategory launchPrefCat = new PreferenceCategory(this);

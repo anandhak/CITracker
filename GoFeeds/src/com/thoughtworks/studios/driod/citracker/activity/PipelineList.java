@@ -35,19 +35,23 @@ public class PipelineList extends ListActivity {
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		setContentView(com.thoughtworks.studios.driod.citracker.R.layout.main);
-		pipelines = new ArrayList<Pipeline>();
-		this.setListAdapter(new PipelineListAdapter(this, R.layout.row,
-				FeedParserFactory.loadPipelines(pipelines, FeedParserFactory.getAuthString(this))));
+		pipelines = FeedParserFactory.loadPipelines(this);
+		this.setListAdapter(new PipelineListAdapter(this, R.layout.row, pipelines));
 	}
 
 	@Override
+	public void onContentChanged() {
+		super.onContentChanged();
+		pipelines = FeedParserFactory.loadPipelines(this);
+		this.setListAdapter(new PipelineListAdapter(this, R.layout.row, pipelines));
+	}
+	
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		menu.add(Menu.NONE, MainMenuOptions.ADD_PIPELINE.ordinal(),
-				MainMenuOptions.ADD_PIPELINE.ordinal(),
+		menu.add(Menu.NONE, MainMenuOptions.ADD_PIPELINE.ordinal(), MainMenuOptions.ADD_PIPELINE.ordinal(),
 				com.thoughtworks.studios.driod.citracker.R.string.add_pipeline);
-		menu.add(Menu.NONE, MainMenuOptions.PREFERENCES.ordinal(),
-				MainMenuOptions.PREFERENCES.ordinal(),
+		menu.add(Menu.NONE, MainMenuOptions.PREFERENCES.ordinal(), MainMenuOptions.PREFERENCES.ordinal(),
 				com.thoughtworks.studios.driod.citracker.R.string.preferences);
 		return true;
 	}
@@ -59,12 +63,9 @@ public class PipelineList extends ListActivity {
 		if (option == MainMenuOptions.PREFERENCES) {
 			Log.i("On menu selection" + option.toString(), item.toString());
 			Intent myIntent = new Intent();
-			myIntent.setClass(getApplicationContext(),
-					PreferencesFromCode.class);
+			myIntent.setClass(getApplicationContext(), PreferencesFromCode.class);
 			startActivity(myIntent);
 		}
-		Toast.makeText(getApplicationContext(), "Picking Pref",
-				Toast.LENGTH_LONG);
 		return false;
 	}
 
@@ -73,8 +74,7 @@ public class PipelineList extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 		Intent myIntent = new Intent();
 		myIntent.setClass(getApplicationContext(), MessageList.class);
-		myIntent.putExtra(SELECTED_PIPELINE_URL_KEY, pipelines.get(position)
-				.getPipelineFeedUrl());
+		myIntent.putExtra(SELECTED_PIPELINE_URL_KEY, pipelines.get(position).getPipelineFeedUrl());
 		startActivity(myIntent);
 	}
 
