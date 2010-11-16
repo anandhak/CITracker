@@ -16,6 +16,7 @@ public abstract class BaseFeedParser implements FeedParser {
 	static final  String ENTRY = "entry";
 	
 	private final URL feedUrl;
+	//TODO: THIS SHOULD GO AWAY
     private String theUsername = "";
     private String thePassword = "";
 
