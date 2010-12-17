@@ -16,7 +16,7 @@
     <string name="credentials">Credentials</string>
     <string name="summary_edittext_preference">Use the LDAP or Go server credentials here.</string>
     <string name="username">Username</string>
-    <string name="password">password</string>
+    <string name="password">Password</string>
 
     <string name="title_list_preference">Pipelines</string>
     <string name="summary_list_preference">Pipelines to  be notified on.</string>
