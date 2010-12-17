@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CITracker" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <module name="CITracker" />
+    <option name="ACTIVITY_CLASS" value="" />
+    <option name="MODE" value="default_activity" />
+    <option name="DEPLOY" value="true" />
+    <option name="CHOOSE_DEVICE_MANUALLY" value="true" />
+    <option name="PREFERRED_AVD" value="" />
+    <option name="COMMAND_LINE" value="" />
+    <option name="WIPE_USER_DATA" value="false" />
+    <option name="DISABLE_BOOT_ANIMATION" value="false" />
+    <option name="NETWORK_SPEED" value="full" />
+    <option name="NETWORK_LATENCY" value="none" />
+    <option name="CLEAR_LOGCAT" value="true" />
+    <RunnerSettings RunnerId="AndroidDebugRunner" />
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method />
+  </configuration>
+</component>
