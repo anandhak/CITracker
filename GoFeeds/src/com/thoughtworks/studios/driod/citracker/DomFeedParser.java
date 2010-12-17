@@ -1,16 +1,15 @@
 package com.thoughtworks.studios.driod.citracker;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
 
 import com.thoughtworks.studios.driod.citracker.model.Message;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DomFeedParser extends BaseFeedParser {
 

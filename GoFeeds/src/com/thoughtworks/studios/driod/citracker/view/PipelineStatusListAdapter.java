@@ -26,11 +26,14 @@ public class PipelineStatusListAdapter extends ArrayAdapter<Message> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = super.getView(position, convertView, parent);
+        if(convertView == null) {
+        	convertView = super.getView(position, convertView, parent);
+        }
+        
         Message item = getItem(position);
-        view.setFocusable(false);
-        view.setClickable(false);
-        view.setBackgroundColor(colourStatus.get(item.getCategory()));
-        return view;
+        convertView.setFocusable(false);
+        convertView.setClickable(false);
+        convertView.setBackgroundColor(colourStatus.get(item.getCategory()));
+		return convertView;
     }
 }

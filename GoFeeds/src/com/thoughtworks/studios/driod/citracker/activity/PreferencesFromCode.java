@@ -2,14 +2,12 @@ package com.thoughtworks.studios.driod.citracker.activity;
 
 import android.os.Bundle;
 import android.preference.EditTextPreference;
-import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.text.method.PasswordTransformationMethod;
 import android.text.method.SingleLineTransformationMethod;
 import android.widget.Toast;
-
 import com.thoughtworks.studios.driod.citracker.R;
 
 public class PreferencesFromCode extends PreferenceActivity {

@@ -1,12 +1,12 @@
 package com.thoughtworks.studios.driod.citracker;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.thoughtworks.studios.driod.citracker.model.Message;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.thoughtworks.studios.driod.citracker.BaseFeedParser.*;
 

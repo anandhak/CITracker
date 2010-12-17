@@ -19,21 +19,21 @@ public class PipelineListAdapter extends ArrayAdapter<Pipeline> {
 		colourStatus.put("cancelled", Color.YELLOW);
 	};
 
-	public PipelineListAdapter(Context context, int textViewResourceId,
-			List<Pipeline> messages) {
+	public PipelineListAdapter(Context context, int textViewResourceId, List<Pipeline> messages) {
 		super(context, textViewResourceId, messages);
 	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		View view = super.getView(position, convertView, parent);
-		//TODO : Handle condition of auth failure showing an empty message - Open Preference Activity
+		if (convertView == null) {
+			convertView = super.getView(position, convertView, parent);
+		}
 		try {
 			Pipeline item = getItem(position);
-			view.setBackgroundColor(colourStatus.get(item.getCurrentStatus()));
+			convertView.setBackgroundColor(colourStatus.get(item.getCurrentStatus()));
 		} catch (Exception e) {
-			return view;
+			return convertView;
 		}
-		return view;
+		return convertView;
 	}
 }

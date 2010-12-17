@@ -10,12 +10,14 @@ import com.thoughtworks.studios.driod.citracker.model.Message;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AndroidSaxFeedParser extends BaseFeedParser {
 
-    static final String FEED = "feed";
+    private static final int MAX_ENTRIES = 50;
+	static final String FEED = "feed";
 
     public AndroidSaxFeedParser(String feedUrl) {
         super(feedUrl, "");
@@ -30,8 +32,8 @@ public class AndroidSaxFeedParser extends BaseFeedParser {
         entry.setEndElementListener(new EndElementListener() {
             public void end() {
                 messages.add(currentMessage.copy());
-                if(messages.size() >= 10){
-                    throw new RuntimeException("Need only 10 entries!");
+                if(messages.size() >= MAX_ENTRIES){
+                    throw new RuntimeException(MessageFormat.format("Need only {0}entries!", MAX_ENTRIES));
                 }
             }
         });
