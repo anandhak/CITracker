@@ -6,7 +6,7 @@
     <string name="add_pipeline">Add Pipeline</string>
     <string name="add_go_url">Add New Go URL</string>
     <string name="preferences">Preferences</string>
-    
+
     <string name="server_base_url">Go Server:Port</string>
     <string name="go_url_example">serverName:port</string>
     <string name="authentication">Authentication</string>
@@ -19,10 +19,13 @@
     <string name="password">Password</string>
 
     <string name="title_list_preference">Pipelines</string>
-    <string name="summary_list_preference">Pipelines to  be notified on.</string>
+    <string name="summary_list_preference">Pipelines to be notified on.</string>
     <string name="choose_pipeline">Choose pipeline</string>
-    
+
     <string name="pipeline">Pipeline</string>
     <string name="pipelines_example">Ex. pipeline1,pipeline2..</string>
-    
+
+    <string name="ok">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_pipeline">New Pipeline</string>
 </resources>

@@ -1,7 +1,5 @@
 package com.thoughtworks.studios.driod.citracker.activity;
 
-import java.util.List;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,12 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import com.thoughtworks.studios.driod.citracker.FeedParserFactory;
 import com.thoughtworks.studios.driod.citracker.MainMenuOptions;
 import com.thoughtworks.studios.driod.citracker.R;
 import com.thoughtworks.studios.driod.citracker.model.Message;
 import com.thoughtworks.studios.driod.citracker.view.PipelineStatusListAdapter;
+
+import java.util.List;
 
 public class MessageList extends ListActivity {
 
@@ -27,13 +26,23 @@ public class MessageList extends ListActivity {
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		setContentView(com.thoughtworks.studios.driod.citracker.R.layout.main);
-
-		String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
-		Log.i("Pipeline runs-- showing", "Pipeline url=" + currentPipeline);
-		messages = FeedParserFactory.loadFeed(currentPipeline, FeedParserFactory.getAuthString(this));
-		ArrayAdapter<Message> adapter = new PipelineStatusListAdapter(this, R.layout.row, messages);
-		this.setListAdapter(adapter);
+        reloadEntries();
 	}
+
+    private void reloadEntries() {
+        String currentPipeline = getIntent().getStringExtra(PipelineList.SELECTED_PIPELINE_URL_KEY);
+        Log.i("Pipeline runs-- showing", "Pipeline url=" + currentPipeline);
+        messages = FeedParserFactory.loadFeed(currentPipeline, FeedParserFactory.getAuthString(this));
+        ArrayAdapter<Message> adapter = new PipelineStatusListAdapter(this, R.layout.row, messages);
+        this.setListAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        reloadEntries();
+    }
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
