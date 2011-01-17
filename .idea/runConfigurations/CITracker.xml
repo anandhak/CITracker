@@ -4,10 +4,10 @@
     <option name="ACTIVITY_CLASS" value="" />
     <option name="MODE" value="default_activity" />
     <option name="DEPLOY" value="true" />
-    <option name="CHOOSE_DEVICE_MANUALLY" value="true" />
-    <option name="PREFERRED_AVD" value="" />
+    <option name="CHOOSE_DEVICE_MANUALLY" value="false" />
+    <option name="PREFERRED_AVD" value="Andriod" />
     <option name="COMMAND_LINE" value="" />
-    <option name="WIPE_USER_DATA" value="false" />
+    <option name="WIPE_USER_DATA" value="true" />
     <option name="DISABLE_BOOT_ANIMATION" value="false" />
     <option name="NETWORK_SPEED" value="full" />
     <option name="NETWORK_LATENCY" value="none" />

@@ -28,4 +28,6 @@
     <string name="ok">Add</string>
     <string name="cancel">Cancel</string>
     <string name="new_pipeline">New Pipeline</string>
+    <string name="local_service_started">Service started</string>
+    <string name="local_service_stopped">Service stopped</string>
 </resources>

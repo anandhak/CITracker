@@ -1,39 +1,42 @@
 package com.thoughtworks.studios.driod.citracker.view;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 import com.thoughtworks.studios.driod.citracker.model.Pipeline;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class PipelineListAdapter extends ArrayAdapter<Pipeline> {
-	private static Map<String, Integer> colourStatus = new HashMap<String, Integer>();
-	static {
-		colourStatus.put("failed", Color.RED);
-		colourStatus.put("passed", Color.GREEN);
-		colourStatus.put("cancelled", Color.YELLOW);
-	};
+    public static Map<String, Integer> COLOUR_STATUS = new HashMap<String, Integer>();
 
-	public PipelineListAdapter(Context context, int textViewResourceId, List<Pipeline> messages) {
-		super(context, textViewResourceId, messages);
-	}
+    static {
+        COLOUR_STATUS.put("failed", 0XFFCA2626);
+        COLOUR_STATUS.put("passed", 0xFF629E26);
+        COLOUR_STATUS.put("cancelled", 0xFFCE9C17);
+    }
 
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		if (convertView == null) {
-			convertView = super.getView(position, convertView, parent);
-		}
-		try {
-			Pipeline item = getItem(position);
-			convertView.setBackgroundColor(colourStatus.get(item.getCurrentStatus()));
-		} catch (Exception e) {
-			return convertView;
-		}
-		return convertView;
-	}
+    public PipelineListAdapter(Context context, int textViewResourceId) {
+        super(context, textViewResourceId);
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            convertView = super.getView(position, convertView, parent);
+        }
+        try {
+            Pipeline item = getItem(position);
+            ((TextView) convertView).setText(item.toString());
+            convertView.setBackgroundColor(COLOUR_STATUS.get(item.getCurrentStatus()));
+        } catch (Exception e) {
+            //TODO:Dont try to change state of UI on failure. Make toast
+            return convertView;
+        }
+        return convertView;
+    }
+
 }
