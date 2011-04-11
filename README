@@ -1,5 +1,22 @@
-Adding first cut into the code base.
+This code works on  Andriod 2.2 SDK and has been developed on IntelliJ IDEA 10 Community Edition.
 
-Yet to clear up things.
+The idea project files are included along with the Runtime configurations and should directly launch the emulator if the Andriod 2.2 SDK and simulator are installed on the system.
 
-This is just a hack put together.
+When the app launches, following information is needed.
+
+- A valid Go server installation with at least one pipeline setup
+
+Ex. http://<my-go-server>:8153
+
+- A valid username , password with view permissions to at least one pipeline on the configured Go Sever.
+
+- Name of one Active pipeline
+
+Launch the Application.
+
+- Hit Menu
+
+- Goto Preferences
+
+- Add all of the above information. You can add multiple pipelines separated by commas.
+
