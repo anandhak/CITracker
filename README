@@ -6,7 +6,7 @@ When the app launches, following information is needed.
 
 - A valid Go server installation with at least one pipeline setup
 
-Ex. http://&lt;my-go-server&gt;:8153
+Ex. http://[my-go-server]:8153
 
 - A valid username , password with view permissions to at least one pipeline on the configured Go Sever.
 
